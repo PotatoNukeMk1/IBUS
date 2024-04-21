@@ -42,8 +42,8 @@ void setup() {
   Serial.begin(115200);
   while(!Serial);
 
-  Serial1.begin(100000, SERIAL_8E2);
-  Serial1.setTimeout(6);
+  Serial1.begin(115200);
+  Serial1.setTimeout(2);
   IBUS.begin(Serial1);
 
   // steering config
